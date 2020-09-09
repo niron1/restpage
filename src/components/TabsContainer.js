@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link, Route, BrowserRouter, Switch } from "react-router-dom";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import "./TabsContainer.css";
+import ParamsContainer from './ParamsContainer';
 
 const AntTabs = withStyles({
   root: {
@@ -93,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
 function Request(theme) {
   return (
     <Paper>
-      <div>Request Editor</div>
+      <ParamsContainer isRequest/>
     </Paper>
   );
 }
@@ -101,7 +102,7 @@ function Request(theme) {
 function Response(theme) {
   return (
     <Paper>
-      <div>Response Editor</div>
+      <ParamsContainer/>
     </Paper>
   );
 }
